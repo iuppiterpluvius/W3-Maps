@@ -1,0 +1,136 @@
+<h1>Retera's Model Studio</h1>
+<p>Submitted by Retera</p>
+<p>Uploaded: 03 Jun, 2019</p>
+<p>Last edited: 05 Feb, 2022</p>
+<p>Source:</p>
+<p><a href="https://www.hiveworkshop.com/threads/reteras-model-studio.316000/">https://www.hiveworkshop.com/threads/reteras-model-studio.316000/</a></p>
+<p>Tags: 3D Art, CASC Management, Object Data, Windows</p>
+<p>Filesize: 65.68 MB</p>
+<h2>Retera's Model Studio 0.04.2</h2>
+<p>Filesize: 65.68 MB</p>
+<p>Filename: ReterasModelStudioV0.04.2b.zip</p>
+<h2>Description</h2>
+<p><span style="font-size: 15px">This is Retera's Model Studio v0.04 Public Beta. It is not finished! But it is something that works and is better than the Matrix Eater application, and is compatible with Patch 1.32.</span><br />
+<br />
+Retera's Model Studio is the second evolution of the Matrix Eater project. It is a standalone MDL and MDX model editor. The project has diverged from the Matrix Eater that is available here on the Hive, and become a different program with features that do not totally overlap -- although my goal is for this to entirely replace the Matrix Eater.<br />
+<br />
+Features:<br />
+<ul>
+<li data-xf-list-type="ul">Open and view MDL and MDX model files</li>
+<li data-xf-list-type="ul">CASC Data browser with double-click to view model, or texture, using JCASC from DrSuperGood</li>
+<li data-xf-list-type="ul">Attempts to support every single Warcraft III Patch up to and including Patch 1.31</li>
+<li data-xf-list-type="ul">MPQ Data browser seamlessly replaces CASC browser when using older patches of the game</li>
+<li data-xf-list-type="ul">24 color &quot;Team Color&quot; menu will seamlessly swap to 12 colors when using an older patch of the game</li>
+<li data-xf-list-type="ul">Edit the model geometry (Select by Vertex, Select by Face, Select by Group)</li>
+<li data-xf-list-type="ul">Editor hotkeys that were not present in the Matrix Eater predecessor (QWER for edit mode, ASDF for select mode)</li>
+<li data-xf-list-type="ul">Control which Geosets are editable at one time</li>
+<li data-xf-list-type="ul">Animation Previewing (No particles or ribbons yet)</li>
+<li data-xf-list-type="ul">An &quot;Open Internal&quot; menu for loading game models quickly</li>
+<li data-xf-list-type="ul">Can open and save MDX to MDL or MDL to MDX using a converter that supports features such as ReplaceableId on Particle Emitters better than some alternatives</li>
+<li data-xf-list-type="ul">Includes a basic UV map editor</li>
+<li data-xf-list-type="ul">Multiple GUI themes available in the Preferences Window</li>
+</ul>Experimental Features:<br />
+<ul>
+<li data-xf-list-type="ul">Create a new blank model with basic planes and boxes</li>
+<li data-xf-list-type="ul">Can open BLP or PNG images for previewing (similar to Magos application)</li>
+<li data-xf-list-type="ul">Includes an Edit Textures menu to view the list of used textures, and quickly change used paths.</li>
+<li data-xf-list-type="ul">Quick Browse: Opening a new model in the Data Browser will close unsaved old ones (can be turned off in preferences)</li>
+<li data-xf-list-type="ul">Customizable layout, allowing you to draw components of the UI into different places</li>
+<li data-xf-list-type="ul">Window -&gt; Reset Layout to reload the default layout</li>
+<li data-xf-list-type="ul">T-Pose edit mode, which can move mesh based on assigned bones in a more intelligent way</li>
+<li data-xf-list-type="ul">Cluster selection mode, similar to Group mode but using connected mesh rather than assigned VertexGroup</li>
+<li data-xf-list-type="ul">Animation edit mode, which can edit and modify animations (Warning: uses Hermite and Bezier by default, and inserts incorrect inward and outward tangents that will cause visual &quot;vibrations&quot; of nonlinear models in some cases, this is a fixable bug, needs more time)</li>
+<li data-xf-list-type="ul">Hive Browser is a feature that does not work and was added only as a UI mockup to discuss technology, and was included by accident in V0.01. It will be removed in V0.02, as to my knowledge, the required server technology for the hypothetical feature to work was not built.</li>
+</ul>Limitations:<br />
+<ul>
+<li data-xf-list-type="ul">Unlike Matrix Eater, this application cannot pin a Geoset to be visible but not editable</li>
+<li data-xf-list-type="ul">Unlike Matrix Eater, this application gives no indication of a node's name graphically in the 2D editing space</li>
+<li data-xf-list-type="ul">No user interface to control mounting system for MPQ/CASC hybrid loading system, so it will break again in Patch 1.32 or whenever Blizzard moves data once again</li>
+<li data-xf-list-type="ul">Inherits WC3 cached install directory information from Matrix Eater, which can be removed in the case of incompatibility and is located at C:\Users\&lt;name&gt;\AppData\Roaming\JWC3\user.profile</li>
+<li data-xf-list-type="ul">After running this application, configuration settings from the Matrix Eater application may become corrupted and not work correctly, causing strange white background errors (This application will not be affected)</li>
+</ul>Required for running Retera's Model Studio:<br />
+<ul>
+<li data-xf-list-type="ul">A Java SE Runtime Environment. A bundle is included with a Windows 64-bit EXE launcher but if you want the application to run on Linux or Mac then you must install the Java SE Runtime Environment separately.</li>
+<li data-xf-list-type="ul">The above statement means that if you are a 32-bit Windows XP user, the EXE application will not function (only tested with Windows 7 64-bit, and Windows 10 64-bit)</li>
+<li data-xf-list-type="ul">A valid Warcraft III Installation (only tested with Patch 1.22 through Patch 1.31)</li>
+</ul>Additionally bundled applications (main methods in the same Java application included as EXE files):<br />
+<ul>
+<li data-xf-list-type="ul">Includes the AnimTransfer EXE that was previously included with Matrix Eater, which will use the Retera Model Studio MDL and MDX parser, which has significant subtle improvements over the one in the Matrix Eater application thanks to contributions from Ghostwolf.</li>
+<li data-xf-list-type="ul">Includes the ObjectEditor EXE shown in YouTube videos that has custom folders based on unit race, and can be opened multiple times simultaneously and can select, copy, and paste multiple Units between two running instances of the software. (Known to have bugs, requires Windows Clipboard, fails on Linux)</li>
+<li data-xf-list-type="ul">BlpConv EXE that can be used to convert TGA to BLP using DrSuperGood's blp-iio-plugin on systems where Magos or BLP Lab are not working (although these two alternative tools are typically superior to mine)</li>
+</ul><div>v0.04.2b<br />
+<ul>
+<li data-xf-list-type="ul">Fixed a bug in &quot;Edit/delete model components&quot; reported by Hive user @Makkad (retains FaceFX chunks now)</li>
+</ul>v0.04.2<br />
+<ul>
+<li data-xf-list-type="ul">Tiny change requested by discord user VictorZ that allows &quot;Rotate Type-In&quot; to work in the Animation Editor. (The code for this was copied almost directly from the Twilac version of 0.05, so you should seriously probably just use 0.05!)</li>
+</ul><br />
+v0.04.1<br />
+<ul>
+<li data-xf-list-type="ul">Opening a file in a folder does not walk the directory tree of that folder</li>
+<li data-xf-list-type="ul">Scripts -&gt; Skin Splice function added upon request from Vulfar</li>
+</ul>v0.04 for 1.32.10<br />
+<ul>
+<li data-xf-list-type="ul">Fixes the program to work with the new Warcraft III Patch 1.32.10 that changed the TFVS formatting for some reason.</li>
+<li data-xf-list-type="ul">Includes some really minor internal bug fixes over the previous version</li>
+</ul>v0.04:<br />
+<ul>
+<li data-xf-list-type="ul">Merged the version known as &quot;Retera Model Studio Reforged Hack&quot; to be the mainline version of the tool going forward (this version includes all of the fixes listed <a href="https://www.hiveworkshop.com/threads/retera-model-studio-reforged-hack.320070/" class="link link--internal">here</a>)</li>
+<li data-xf-list-type="ul">Added support for Reforged assets and a bunch of bug fixes related to working with those</li>
+<li data-xf-list-type="ul">Added &quot;Scripts -&gt; Assign FormatVersion 800&quot; to convert Reforged Classic Models to the legacy classic model format, as well as &quot;Scripts -&gt; Assign FormatVersion 1000&quot; to convert legacy game client models to match the format used by the &quot;Classic Graphics&quot; of Reforged.</li>
+<li data-xf-list-type="ul">Added a &quot;Reforged Graphics Mode&quot; and &quot;Classic Graphics Mode&quot; in the data sources chooser panel</li>
+<li data-xf-list-type="ul">Added the &quot;Model&quot; tab which is buggy and unfinished</li>
+</ul>v0.03:<br />
+<ul>
+<li data-xf-list-type="ul">Changed the program to use Java 11. Had trouble exporting the JAR from Eclipse, so I changed it back to Java 8 for now.</li>
+<li data-xf-list-type="ul">Changed the program to use the latest version of DrSuperGood's JCASC, which requires Java 11 to use, then I modified his code so that it did not require Java 11 so that we could continue deployment in the previous fashion.</li>
+<li data-xf-list-type="ul">Changed the startup sequence to use a &quot;data source chooser&quot; view, which is also available in Preferences. This allows users to load CASC or MPQ data in a way that is intended to be straightforward and clear to the user, and for CASC data the user able to choose the locale to load from the game. Locales that are present in the CASC's list but have not been downloaded from Blizzard are shown in dark red. These dark red options won't work until you launch Warcraft III at least one time using that locale.</li>
+<li data-xf-list-type="ul">Changed the startup sequence to return the user to the &quot;data source chooser&quot; any time that the program crashes during startup, so that the user is always able to reconfigure their settings.</li>
+<li data-xf-list-type="ul">Changed the model previewer to include the rendering of Particle Emitters, so that users can have a better feel for how their models might look in-game. This is a nontrivial task that involves many hundreds of lines of code replicating the behavior of the game and it was only possible because of the works of Ghostwolf, which I translated nearly directly from JavaScript into Java.<ul>
+<li data-xf-list-type="ul">&quot;Squirt&quot; mode particles will emit at random times when they should not because of a difference between my code and Ghostwolf's code (his does not have this bug).</li>
+<li data-xf-list-type="ul">Also, priority plane and layering are known to have issues.</li>
+</ul></li>
+<li data-xf-list-type="ul">Added a JSON parser that loads the &quot;filealiases.json&quot; data when using CASC. This file is used by the 1.30 and 1.31 clients to support removed legacy files inside the Warcraft III game, and it will now be supported by the Retera Model Studio when viewing models. This will fix missing textures in some instances when the textures were not missing in-game.</li>
+<li data-xf-list-type="ul">Changed the default application data folder to be named &quot;ReteraStudio&quot; instead of &quot;JWC3&quot;. This change removes bad interactions with the &quot;Matrix Eater&quot; application where the &quot;Retera Model Studio&quot; and &quot;Matrix Eater&quot; would write clashing versions of the same data to the same settings file (see &quot;AppData/Roaming/ReteraStudio&quot; on your computer).<ul>
+<li data-xf-list-type="ul">This will cause a reset of all user settings for the Retera Model Studio version v0.03.</li>
+<li data-xf-list-type="ul">If you wish to avoid a settings reset, copy your settings file from &quot;AppData/Roaming/JWC3&quot;. However I do not promise backwards compatibility.</li>
+</ul></li>
+<li data-xf-list-type="ul">Fixed an issue with the Quick Browse option so that turning it off and on will work correctly.</li>
+<li data-xf-list-type="ul">Added a scroll bar to the &quot;Change Animation Lengths (by Scaling)&quot; popup. (Thanks Mythic!) This popup is now listed under the &quot;Scripts&quot; menu.</li>
+<li data-xf-list-type="ul">Added 3 new GUI Themes: HiFi, Acryl, and Aluminium. These are all from the JTattoo library. Also, the &quot;Dark&quot; theme was technically the &quot;Noire&quot; theme from the JTattoo library, and it has been renamed accordingly. Aluminium is now the default theme (this can still be changed in the Preferences Window).</li>
+<li data-xf-list-type="ul">Changed code in the BLP loading pipeline used for rendering models and icons that aims to avoid destruction of texture data that is beneath an alpha channel yet loaded on a model's surface regardless of the alpha channel. Previously visual artifacts were visible in some cases that were not in accordance with how the textures would display in the Warcraft III game.</li>
+<li data-xf-list-type="ul">Added an &quot;Edit&quot; button in the Time Bound Chooser panel, but it does not actually work yet and will be fixed in a future version.</li>
+<li data-xf-list-type="ul">Changed some code with the &quot;X&quot; button on the program and how closing model files functions, so that it should not be able to bug out and fail to close a model or fail to close the application in a way unexpected by the user.</li>
+<li data-xf-list-type="ul">Added a system in the 3D displays that compares the aspect ratios known to the application with the aspect ratios known to the graphics card that attempts to use this information to fix the renderer when used on desktops that have the UI Scale setting specified. This was tested on Windows 10 with the UI scale, and it still fails on multiple monitor configurations where the second or third monitor have differing UI Scale specified. However, it should always work correctly on the main display when previously it may not have worked correctly at all.</li>
+<li data-xf-list-type="ul">Added a Preferences option to disable rendering particle emitters, as well as a separate option to disable rendering particle emitters in the Editor view.</li>
+<li data-xf-list-type="ul">Changed the &quot;Use Boxes for Pivot Points&quot; option so that it also affects the 2D displays in the Animation Editor.</li>
+<li data-xf-list-type="ul">Changed the Right-Click mouse button not to do anything on the Outliner widget, so that it can popup an &quot;Edit&quot; option on a popup menu in a future version of the software.</li>
+<li data-xf-list-type="ul">Changed the code that converts program data to MDX at Save time, so that some models that previously would not save due to state corruption inside the Model Studio will now be able to save. There may be more similar bugs yet to be fixed.</li>
+<li data-xf-list-type="ul">Changed the SLK parser used to load Unit Data so that it should be able to load data from the Reign of Chaos and from Project Revolution, in case users wish to load that data using the new game data source choosing settings.</li>
+<li data-xf-list-type="ul">Changed the Unit Browser to reload its contents when the program data source is changed. Previously, the &quot;View -&gt; Change Game Directory&quot; option was likely to change the internal setting but keep previously cached information in the Unit Browser.</li>
+<li data-xf-list-type="ul">Added a command line option, &quot;-forcedataprompt&quot; to force the program to start with the Data Source Chooser window, so that users can specify their Warcraft III game data source without launching the application.</li>
+<li data-xf-list-type="ul">Changed how missing textures resolve so that they should resolve to a white surface. This should hopefully remove the irritating popup.</li>
+<li data-xf-list-type="ul">Attempted to make the Perspective view constantly repaint itself to always update dynamically, however in practice this is still not working in some cases.</li>
+<li data-xf-list-type="ul">Changed the texture loader so that a default Tree texture will be loaded when the replaceable texture ID is not known. This does not yet help with previewing cliff models but it means that the Mountain Giant and similar models should preview decently.</li>
+<li data-xf-list-type="ul">Added a scroll bar to the Texture Manager shown with &quot;Tools -&gt; Edit Textures&quot; for use on models with many textures</li>
+<li data-xf-list-type="ul">Reorganized some of the program menus to attempt to make them more logical (Based on some suggestions from Hayate, many thanks! If only this program could be updated as quickly as his mockup UI!) More changes to these may be added in a future version, as they are still rather disorganized.<ul>
+<li data-xf-list-type="ul">The new &quot;Scripts&quot; is a place for one-off script utilities that don't fit anywhere else, and maybe be user modifiable to include custom code in the future. At this time, it is only a preset list.</li>
+<li data-xf-list-type="ul">&quot;Scripts -&gt; Export Animated to Static Mesh&quot; is a new option to build snapshot models. Unfortunately, it only snapshots the currently timeline in the Editor view, not in the Viewer that you see when you start the application. Also, it discards all node information, including Billboarded nodes, so camera-centric planes will be left to face forward instead of the camera.</li>
+<li data-xf-list-type="ul">&quot;Edit -&gt; Optimize&quot; now include an option to merge all geosets that share like materials and visibility that is called &quot;Minimize Geosets&quot;. Misha and a few other users have been asking for this option for years. I have not tested it very extensively and there may still be bugs in it. It worked on one or two sample cases that I experimented with.</li>
+</ul></li>
+<li data-xf-list-type="ul">In v0.01/v0.02 I added an option in Program Preferences to allow loading Non-BLP textures, so that users can open a PNG file or a model that references a PNG file even though these are generally not valid MDX files when used inside the Warcraft III game. This option may have been changed in the newer one to fix bugs, according to some of my code history information.</li>
+<li data-xf-list-type="ul">Fixed a crash relating to parsing WTS files for unit data, such as when the Data Source Chooser is used to load a custom map file as an MPQ.</li>
+<li data-xf-list-type="ul">Changed &quot;Error: A matrix's bone id was not referencing a real bone!&quot; to be a console log line instead of a popup, so that users do not receive a spamming wave of popups when opening a model file.</li>
+<li data-xf-list-type="ul">Changed the model parser to accept models with missing Pivot Points (as the Warcraft III game does), so that the Retera Model Studio is able to open some MDX models that previously would have caused a crash popup.</li>
+</ul>v0.02:<br />
+<ul>
+<li data-xf-list-type="ul">Removed Hive Browser UI mockup that did not work</li>
+<li data-xf-list-type="ul">Wrapped the startup code in a block that will catch and display errors in a GUI</li>
+<li data-xf-list-type="ul">Fixed an issue where users who had never run the Matrix Eater application in the past would have the Retera Model Studio application crash the first time it was run</li>
+</ul></div>Personal note: On the Matrix Eater application, I left a note where I said:<br />
+<blockquote>I really wanted to revamp this program and add new features and write a tutorial before I uploaded it onto the Hive, but I just haven't had time recently, and I want to stop sitting on this updated version because it has several internal fixes that should make it less likely to save buggy MDX models and so I feel the community deserves this new version in case anybody is using the program -- regardless of whether I end up getting the time to improve it to match up with my dreams or not.</blockquote><br />
+This application does not solve that concern of mine. I am not uploading this as a finished product. But as we have seen with Patch 1.31, some times, software is pushed into production when it isn't ready. That is the case with this application. I want more than I have. I just can't stand not to share with the community what I have anymore, because I feel a deep sense of guilt for anyone who is using the Matrix Eater application and forcing themselves to mod on Patch 1.26 or some nonsense, while the above application existed on my computer and has for almost a year.<br />
+<br />
+I believe in the power of open source, and this application is entirely open source. I have been developing it for about two years since the Matrix Eater was posted, and it has evolved out of the same codebase. This is the same GitHub link that was included on the Matrix Eater program, but it now contains the source for Retera Model Studio:<br />
+<a href="https://github.com/Retera/JWC3" target="_blank" class="link link--external" rel="nofollow ugc noopener">Retera/JWC3</a></p>
+<p>Don't forget to credit the author.</p>
